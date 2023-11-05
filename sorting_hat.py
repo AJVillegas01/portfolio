@@ -15,7 +15,8 @@ print("\In the following questions, just type the number of the option as answer
 
 
 q1 = int(input("Q1) Do you like Dawn or Dusk? \n1) Dawn \n2) Dusk\n"))
-
+while q1 != 1 or 2:
+       q1 = int(input("Wrong answer. Repeat please\n"))
 if q1 == 1:
         G = G+1 
         R = R+1
