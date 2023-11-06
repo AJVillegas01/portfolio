@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 print('BANK OF CODÉDEX')
 
 pin = int(input('Enter your PIN: '))
@@ -8,4 +11,7 @@ while pin != 1234:
 
 if pin == 1234:
   print('PIN accepted!')
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
