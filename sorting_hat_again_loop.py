@@ -9,15 +9,23 @@ H = 0
 S = 0
 
 
-print("\In the following questions, just type the number of the option as answer")
+print("\nIn the following questions, just type the number of the option as answer")
 
 #in this file im gonna change the while loop into a again loop
 
-q1 = int(input("Q1) Do you like Dawn or Dusk? \n1) Dawn \n2) Dusk\n"))
 
 
-while q1 not in [1,2]:
-       q1 = int(input("Wrong answer. Repeat please\n"))
+again = True
+while again:
+       print("Q1) Do you like Dawn or Dusk? \n1) Dawn \n2) Dusk\n")
+       q1 = input()
+       if q1 ==1 :
+        again = False           
+       else:
+        print(f'{q1} no es una opción, vuelva a intentarlo.')
+        if q1 == 1 or 2:
+         break
+
 if q1 == 1:
         G = G+1 
         R = R+1
@@ -26,8 +34,6 @@ elif q1 ==2:
         S = S+1      
 else:
         print("Wrong input")
-                
-
 ########
 
 q2 = int(input("Q2) When I’m dead, I want people to remember me as:\n1) The Good\n2) The Great\n3) The Wise\n4) The Bold\nYour answer:"))
