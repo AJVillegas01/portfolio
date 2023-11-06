@@ -11,20 +11,19 @@ S = 0
 
 print("\nIn the following questions, just type the number of the option as answer")
 
-#in this file im gonna change the while loop into a again loop
+#in this file im gonna change the while loop into a again loop in the first question in order to check the differences
 
 
 
 again = True
 while again:
-       print("Q1) Do you like Dawn or Dusk? \n1) Dawn \n2) Dusk\n")
-       q1 = input()
-       if q1 ==1 :
-        again = False           
+       print("Q1) Do you like Dawn or Dusk? \n1) Dawn \n2) Dusk")
+       q1 = int(input())
+       if q1 not in [1,2]:
+              print(f'{q1} no es una opción, vuelva a intentarlo.')
        else:
-        print(f'{q1} no es una opción, vuelva a intentarlo.')
-        if q1 == 1 or 2:
-         break
+              if q1 == 1 or q1 == 2:
+                     again= False
 
 if q1 == 1:
         G = G+1 
