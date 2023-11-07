@@ -21,8 +21,7 @@ while again:
        q1 = int(input())
        if q1 not in [1,2]:
               print(f'{q1} no es una opción, vuelva a intentarlo.')
-       else:
-              if q1 == 1 or q1 == 2:
+       elif q1 == 1 or q1 == 2:
                      again= False
 
 if q1 == 1:
