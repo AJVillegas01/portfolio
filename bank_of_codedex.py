@@ -8,4 +8,3 @@ while pin != 1234:
 if pin == 1234:
   print('PIN accepted!')
 
-print ('20' + "23" + '5000')
