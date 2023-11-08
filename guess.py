@@ -7,6 +7,6 @@ while guess != 6 and tries <8:
   tries += 1
   print('Number of tries:', tries)
 if tries == 8:
-    print('You have exceded the number of tries')
+    print('You have exceeded the number of tries')
 else: 
    print("You got it!")
